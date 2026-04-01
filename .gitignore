@@ -1,4 +1,4 @@
-/.idea
-/.oca
-/target
+.idea/
+.oca/
+target/
 **/.DS_Store
