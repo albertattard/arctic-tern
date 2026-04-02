@@ -1,7 +1,7 @@
 ---
 id: TASK-001
 title: Implement Guided Planner Session Core
-status: proposed
+status: done
 category: workflow
 related_features:
   - SPEC-001
@@ -35,12 +35,14 @@ Implement the first bounded slice of the guided planner: session creation, workf
 
 ## Acceptance Criteria
 
-- [ ] A new session can be created and persisted.
-- [ ] A raw prompt can be attached to a session and processed through an intake step.
-- [ ] The application records one of the expected next states after intake assessment.
-- [ ] JUnit tests cover at least one clarification case, one decision-support case, and one plan-ready case.
-- [ ] The implementation structure leaves room for later planning, critique, and artifact generation steps without rewriting the session core.
+- [x] A new session can be created and persisted.
+- [x] A raw prompt can be attached to a session and processed through an intake step.
+- [x] The application records one of the expected next states after intake assessment.
+- [x] JUnit tests cover at least one clarification case, one decision-support case, and one plan-ready case.
+- [x] The implementation structure leaves room for later planning, critique, and artifact generation steps without rewriting the session core.
 
 ## Notes
 
 This task is intentionally narrower than full planning. It exists to prove the workflow boundary before drafting, critique, and artifact generation are added.
+
+Implemented with a Java 25 Spring Boot application core, H2-backed persistence for sessions/messages/intake decisions, a deterministic intake assessor, and JUnit scenario coverage for clarification, diagnosis, decision-support, and plan-ready transitions.

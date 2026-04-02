@@ -39,7 +39,7 @@ Use one of these controlled `category` values for new tasks:
 
 ## Proposed
 
-- [ ] [TASK-001: Implement Guided Planner Session Core](workflow/TASK-001-implement-guided-planner-session-core.md)
+- (none)
 
 ## In Progress
 
@@ -47,7 +47,7 @@ Use one of these controlled `category` values for new tasks:
 
 ## Done
 
-- (none)
+- [x] [TASK-001: Implement Guided Planner Session Core](workflow/TASK-001-implement-guided-planner-session-core.md)
 
 ## Blocked
 
