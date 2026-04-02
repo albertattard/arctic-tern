@@ -79,6 +79,46 @@ Optimize for clarity, validity, and decision quality.
 
 This project currently explores AI-assisted planning and execution support. OKRs are one possible framing, but they should not dominate the reasoning unless they are clearly the right tool for the job.
 
+## Engineering Workflow
+
+Follow spec-driven delivery for user-visible behavior.
+
+For a new feature or behavior change, default to this sequence:
+
+1. Create or update the relevant spec.
+2. Create or update the relevant task.
+3. Implement the task.
+
+Treat specs as the source of truth for intended user-visible behavior.
+
+If implementation and spec diverge, treat the implementation as wrong until the spec is intentionally updated.
+
+Do not change user-visible behavior without updating the relevant spec and task.
+
+Use these repository boundaries:
+
+- `docs/adr/` for architecture decisions
+- `docs/spec/` for behavior contracts
+- `docs/tasks/` for bounded delivery slices
+
+Treat supporting documents such as principles, planning modes, and scenario matrices as product-thinking inputs, not as implementation contracts.
+
+New task files must:
+
+- include front matter with task metadata
+- live under `docs/tasks/<category>/`
+- stay focused on one bounded delivery slice
+
+Use these task categories unless there is a strong reason to add another:
+
+- `workflow`
+- `planning`
+- `artifact`
+- `evaluation`
+- `persistence`
+- `llm`
+- `repo-process`
+
 ## Trigger Phrases
 
 ### `commit changes`
